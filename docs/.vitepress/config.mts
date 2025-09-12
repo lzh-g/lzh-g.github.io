@@ -16,7 +16,7 @@ export default defineConfig({
   base,
   lang: 'zh-cn',
   title: '@sugarat/theme',
-  description: '粥里有勺糖的博客主题，基于 vitepress 实现',
+  description: '一个为技术博客量身打造的 VitePress 主题',
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
