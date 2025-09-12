@@ -1,19 +1,35 @@
 {
-  "name": "lzh-g.github.io",
+  "name": "vitepress-blog",
   "version": "1.0.0",
-  "description": "lzh's blog",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
-  "keywords": [],
-  "author": "",
+  "private": true,
+  "author": "粥里有勺糖",
   "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@sugarat/theme": "0.5.6",
+    "element-plus": "^2.7.2",
+    "vue": "3.5.12"
+  },
+  "directories": {
+    "doc": "docs"
+  },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.12",
-    "vue": "^3.5.21"
+    "pagefind": "^1.3.0",
+    "sass": "^1.76.0",
+    "typescript": "^5.4.5",
+    "vitepress": "1.6.3"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
   }
 }
