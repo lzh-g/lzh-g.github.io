@@ -22,7 +22,7 @@ export default defineConfig({
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
     // ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
-    ['link', { rel: 'icon', href: '/logo.jpg' }]
+    ['link', { rel: 'icon', href: '/logo.jpg' }],
   ],
   themeConfig: {
     // 展示 2,3 级标题在目录中
@@ -46,7 +46,14 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'C/C++', link: '/CPlusPlus/' },
-      { text: '数据结构', link: '/DS/' },
+      {
+        text: '计算机基础',
+        items: [
+          { text: '计算机网络', link: '/computer-basic/computer-network/' },
+          { text: '操作系统', link: '/computer-basic/operating-system/' },
+          { text: '数据结构与算法', link: '/computer-basic/data-structure-and-algorithm/' }
+        ]
+      },
       { text: '关于作者', link: 'https://sugarat.top/aboutme.html' }
     ],
     socialLinks: [
